@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>使用Hugo搭建个人博客并部署到GitHub上 - lylhw13 | my blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="lylhw13" />
+  <meta name="description" content="一， 使用Hugo搭建个人博客 安装Hugo 这里是在Windows安装Hugo，其他安装可以参考官方文档。 下载hugod的发布版,地址为 https://github.com/gohugoio/hugo/releases , 下载" />
+
+  <meta name="keywords" content="C&#43;&#43;, Linux, C&#43;&#43;" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.42.1" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/hugo/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="使用Hugo搭建个人博客并部署到GitHub上" />
+<meta property="og:description" content="一， 使用Hugo搭建个人博客 安装Hugo 这里是在Windows安装Hugo，其他安装可以参考官方文档。 下载hugod的发布版,地址为 https://github.com/gohugoio/hugo/releases , 下载" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/hugo/" />
+
+
+
+<meta property="article:published_time" content="2018-06-30T15:26:58&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-06-30T15:26:58&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="使用Hugo搭建个人博客并部署到GitHub上">
+<meta itemprop="description" content="一， 使用Hugo搭建个人博客 安装Hugo 这里是在Windows安装Hugo，其他安装可以参考官方文档。 下载hugod的发布版,地址为 https://github.com/gohugoio/hugo/releases , 下载">
+
+
+<meta itemprop="datePublished" content="2018-06-30T15:26:58&#43;08:00" />
+<meta itemprop="dateModified" content="2018-06-30T15:26:58&#43;08:00" />
+<meta itemprop="wordCount" content="829">
+
+
+
+<meta itemprop="keywords" content="Hugo,GitHub," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用Hugo搭建个人博客并部署到GitHub上"/>
+<meta name="twitter:description" content="一， 使用Hugo搭建个人博客 安装Hugo 这里是在Windows安装Hugo，其他安装可以参考官方文档。 下载hugod的发布版,地址为 https://github.com/gohugoio/hugo/releases , 下载"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">lylhw13</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">lylhw13</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">使用Hugo搭建个人博客并部署到GitHub上</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-06-30 </span>
+        <div class="post-category">
+            
+              <a href="/categories/hugo/"> Hugo </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#一-使用hugo搭建个人博客">一， 使用Hugo搭建个人博客</a>
+<ul>
+<li><a href="#安装hugo">安装Hugo</a></li>
+<li><a href="#搭建博客">搭建博客</a></li>
+</ul></li>
+<li><a href="#二-将hugo部署到github上">二，将Hugo部署到GitHub上</a>
+<ul>
+<li><a href="#创建github-pages">创建Github Pages</a></li>
+<li><a href="#部署hugo">部署Hugo</a></li>
+</ul></li>
+<li><a href="#其他">其他</a>
+<ul>
+<li><a href="#后续发布文章">后续发布文章</a></li>
+<li><a href="#常见问题">常见问题：</a>
+<ul>
+<li><a href="#error-1">Error 1:</a></li>
+</ul></li>
+<li><a href="#参考文章">参考文章：</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<h1 id="一-使用hugo搭建个人博客">一， 使用Hugo搭建个人博客</h1>
+
+<h2 id="安装hugo">安装Hugo</h2>
+
+<p>这里是在Windows安装Hugo，其他安装可以参考官方文档。</p>
+
+<ul>
+<li><p>下载hugod的发布版,地址为 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> , 下载完成后解压到任意文件夹</p></li>
+
+<li><p>将该hugo.exe的路径添加到Windows的环境变量中</p></li>
+
+<li><p>如果安装正确，通过 hugo version 可以得到hugo的版本信息</p></li>
+</ul>
+
+<h2 id="搭建博客">搭建博客</h2>
+
+<ul>
+<li>创建你的博客</li>
+</ul>
+
+<pre><code class="language-sh">hugo new site mysite
+</code></pre>
+
+<p>这条命令会在<code>mysite</code>文件夹里创建一个新的<code>site</code>。</p>
+
+<ul>
+<li>安装主题</li>
+</ul>
+
+<pre><code class="language-sh">cd mysite
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+
+# Edit your config.toml configuration file
+# and add the Ananke theme.
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+</code></pre>
+
+<ul>
+<li>添加一个新的内容</li>
+</ul>
+
+<pre><code class="language-sh">hugo new post/first-post.md
+</code></pre>
+
+<p>这个命令会生成一个markdown文件，目录为<code>mysite/content/post</code>，hugo会利用已经安装的主题生成一个新的post。</p>
+
+<ul>
+<li>启动Hugo</li>
+</ul>
+
+<pre><code class="language-sh">hugo server -D
+</code></pre>
+
+<p>会启动一个本地的hugo server，在浏览器里通过<a href="http://localhost:1313">http://localhost:1313</a>即可访问。</p>
+
+<h1 id="二-将hugo部署到github上">二，将Hugo部署到GitHub上</h1>
+
+<p>个人理解：其实就是本地编写markdown内容文件，用hugo渲染成静态网页，然后将这些静态网页push到你的GitHub Pages上。这些静态网页的目录为<code>mysite/public</code>。</p>
+
+<h2 id="创建github-pages">创建Github Pages</h2>
+
+<p>创建GitHub Pages比较简单，只要创建一个格式为<code>yourusername.github.io</code>的仓库即可。
+<img src="/static/media/pic/create_a_github_pages.png" alt="Alert create_a_github_pages" /></p>
+
+<h2 id="部署hugo">部署Hugo</h2>
+
+<ul>
+<li>修改 config.toml</li>
+</ul>
+
+<p>修改<code>mysite/config.toml</code>，将其中的<code>baseURL</code>调整为你自己的网址:</p>
+
+<pre><code class="language-toml">baseURL = &quot;http://lylhw13.github.io/&quot;
+</code></pre>
+
+<ul>
+<li>利用Hugo生成静态网页</li>
+</ul>
+
+<pre><code class="language-sh">hugo --buildDrafts
+</code></pre>
+
+<ul>
+<li>上传到Github</li>
+</ul>
+
+<p>切换到public目录，然后将整个文件夹全部push到之前创建的仓库里。</p>
+
+<pre><code class="language-sh"> cd public
+git init
+git remote add origin git@github.com:lylhw13/yourusername.github.io.git
+git add -A
+git commit -m &quot;first commit&quot;
+git push -u origin master
+# Tips: 
+#if you repository has been init before. Here you may encounter some errors. So you can change the last line as following:
+# git push -u origin master --force
+</code></pre>
+
+<p>然后，就可以通过<code>yourusername.github.io</code>访问你的博客。</p>
+
+<h1 id="其他">其他</h1>
+
+<h2 id="后续发布文章">后续发布文章</h2>
+
+<pre><code class="language-sh">hugo new post/newpages.md #generate markdown files
+hugo #generate your new pages
+
+cd public 
+git add -A
+git commit -m &quot;xxx&quot;
+git push -u origin master
+</code></pre>
+
+<h2 id="常见问题">常见问题：</h2>
+
+<h3 id="error-1">Error 1:</h3>
+
+<pre><code class="language-sh">$ hugo
+Error: Unable to locate Config file. Perhaps you need to create a new site.
+       Run `hugo help new` for details.
+</code></pre>
+
+<p>是因为当前目录不对，应该首先切换到<code>mysite</code>的根目录下再执行<code>hugo</code>命令。</p>
+
+<h2 id="参考文章">参考文章：</h2>
+
+<ul>
+<li><a href="https://www.jianshu.com/p/834d7cc0668d">https://www.jianshu.com/p/834d7cc0668d</a></li>
+<li><a href="https://gdzhu8023.github.io/post/buildblog/">https://gdzhu8023.github.io/post/buildblog/</a></li>
+</ul>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">lylhw13</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2018-06-30</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/hugo/">Hugo</a>
+          
+          <a href="/tags/github/">GitHub</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/github/github/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">GitHub 问题汇总</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/second/">
+            <span class="next-text nav-default">Second</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:lylhw13@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">lylhw13</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

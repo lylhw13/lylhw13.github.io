@@ -6,9 +6,64 @@
     <description>Recent content on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 01 Jul 2018 12:12:11 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://localhost:1313/post/c&#43;&#43;/c&#43;&#43;/</link>
+      <pubDate>Sun, 01 Jul 2018 12:12:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/c&#43;&#43;/c&#43;&#43;/</guid>
+      <description>C++ 问题汇总 关于C/C++的输入输出精度。 参考文章https://stackoverflow.com/questions/16831623/p</description>
+    </item>
+    
+    <item>
+      <title>GitHub 问题汇总</title>
+      <link>http://localhost:1313/post/github/github/</link>
+      <pubDate>Sun, 01 Jul 2018 11:57:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/github/github/</guid>
+      <description>GitHub 问题汇总 Error 1 使用git push时出现error: src refspec master does not match any. 参考链接https://segmentfault.com/q/1010000</description>
+    </item>
+    
+    <item>
+      <title>使用Hugo搭建个人博客并部署到GitHub上</title>
+      <link>http://localhost:1313/post/hugo/</link>
+      <pubDate>Sat, 30 Jun 2018 15:26:58 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo/</guid>
+      <description>一， 使用Hugo搭建个人博客 安装Hugo 这里是在Windows安装Hugo，其他安装可以参考官方文档。 下载hugod的发布版,地址为 https://github.com/gohugoio/hugo/releases , 下载</description>
+    </item>
+    
+    <item>
+      <title>Second</title>
+      <link>http://localhost:1313/post/second/</link>
+      <pubDate>Fri, 29 Jun 2018 13:37:25 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/second/</guid>
+      <description> my second test this is first title third forth five haha somthing anther one lylhw somthing anther one lylhw </description>
+    </item>
+    
+    <item>
+      <title>My First Blog</title>
+      <link>http://localhost:1313/post/first/</link>
+      <pubDate>Fri, 29 Jun 2018 10:13:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/first/</guid>
+      <description>这是第一篇博客。 目标是通过博客来记录一下自己平时工作中遇到的技术问题及一些感受，希望可以帮助到一些遇到同样问题的人以及避免自己做一些无用功。</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 29 Jun 2018 10:10:35 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>This is my personal blog 尝试收集总结生活中的点滴。</description>
+    </item>
     
   </channel>
 </rss>

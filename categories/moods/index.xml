@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on lylhw13 | my blog</title>
-    <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on lylhw13 | my blog</description>
+    <title>Moods on lylhw13 | my blog</title>
+    <link>http://localhost:1313/categories/moods/</link>
+    <description>Recent content in Moods on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Jun 2018 13:37:25 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jun 2018 10:13:02 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/categories/moods/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Second</title>
-      <link>http://localhost:1313/post/second/</link>
-      <pubDate>Fri, 29 Jun 2018 13:37:25 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/second/</guid>
-      <description> my second test this is first title third forth five haha somthing anther one lylhw somthing anther one lylhw </description>
-    </item>
     
     <item>
       <title>My First Blog</title>

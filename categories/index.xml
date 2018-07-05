@@ -20,6 +20,24 @@
     </item>
     
     <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/categories/linux/</link>
+      <pubDate>Thu, 05 Jul 2018 16:05:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/categories/linux/</link>
+      <pubDate>Sun, 01 Jul 2018 15:09:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Moods</title>
       <link>http://localhost:1313/categories/moods/</link>
       <pubDate>Fri, 29 Jun 2018 10:13:02 +0800</pubDate>
@@ -34,6 +52,15 @@
       <pubDate>Sun, 01 Jul 2018 11:57:30 +0800</pubDate>
       
       <guid>http://localhost:1313/categories/summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/categories/windows/</link>
+      <pubDate>Tue, 03 Jul 2018 14:36:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/windows/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,55 @@
     <description>Recent content in Posts on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jul 2018 12:12:11 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jul 2018 16:05:06 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arch_commands</title>
+      <link>http://localhost:1313/post/linux/arch_commands/</link>
+      <pubDate>Thu, 05 Jul 2018 16:05:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/linux/arch_commands/</guid>
+      <description>some commands on arch journalctl -b -1 -r  that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r)</description>
+    </item>
+    
+    <item>
+      <title>Arch_cannot_power_off</title>
+      <link>http://localhost:1313/post/linux/arch_cannot_power_off/</link>
+      <pubDate>Wed, 04 Jul 2018 11:26:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/linux/arch_cannot_power_off/</guid>
+      <description>关于arch无法关机的尝试 method 1 (not work) pacman -Syu method 2（not work） linkhttps://bbs.archlinux.org/viewtopic.php?id=234329 adding a shutdown to the hooks: vim /etc/mkinitcpio.conf HOOKS=(base udev autodetect modconf block filesystems resume keyboard fsck usr shutdown) mkinitcpio -p linux</description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/post/windows/windows/</link>
+      <pubDate>Tue, 03 Jul 2018 14:36:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/windows/windows/</guid>
+      <description>Windows的操作总结 添加软件的自动启动 将某软件设置为开机自启动，只需要将该脚本生成一个“快捷方式”，然后将此快捷方式放置到程序自启动文件</description>
+    </item>
+    
+    <item>
+      <title>Batch</title>
+      <link>http://localhost:1313/post/windows/batch/</link>
+      <pubDate>Tue, 03 Jul 2018 14:02:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/windows/batch/</guid>
+      <description>Windows中Bacth命令总结 将Windows中cmd的输出结果重定向到文件里 ping archlinux.org &amp;gt; D:/log.txt #会覆盖之前的结果 ping archlinux.org &amp;gt;&amp;gt; D:/log.txt #在之前的基础上追加输出</description>
+    </item>
+    
+    <item>
+      <title>Arch 安装</title>
+      <link>http://localhost:1313/post/linux/arch_install/</link>
+      <pubDate>Sun, 01 Jul 2018 15:09:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/linux/arch_install/</guid>
+      <description>使用Arch总结 安装声卡驱动 pacman -S pulseaudio 安装Google Chrome 参考Install Google Chrome on Arch Linux. 触摸板设置 参考链接https://wiki.archlinu</description>
+    </item>
     
     <item>
       <title>C&#43;&#43;</title>

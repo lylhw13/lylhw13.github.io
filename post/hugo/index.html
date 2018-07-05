@@ -19,7 +19,7 @@
 <meta name="author" content="lylhw13" />
   <meta name="description" content="一， 使用Hugo搭建个人博客 安装Hugo 这里是在Windows安装Hugo，其他安装可以参考官方文档。 下载hugod的发布版,地址为 https://github.com/gohugoio/hugo/releases , 下载" />
 
-  <meta name="keywords" content="C&#43;&#43;, Linux, C&#43;&#43;" />
+  <meta name="keywords" content="C&#43;&#43;, Linux, Python" />
 
 
 
@@ -76,7 +76,7 @@
 
 <meta itemprop="datePublished" content="2018-06-30T15:26:58&#43;08:00" />
 <meta itemprop="dateModified" content="2018-06-30T15:26:58&#43;08:00" />
-<meta itemprop="wordCount" content="829">
+<meta itemprop="wordCount" content="934">
 
 
 
@@ -184,6 +184,7 @@
 <li><a href="#常见问题">常见问题：</a>
 <ul>
 <li><a href="#error-1">Error 1:</a></li>
+<li><a href="#文章中添加图片">文章中添加图片</a></li>
 </ul></li>
 <li><a href="#参考文章">参考文章：</a></li>
 </ul></li>
@@ -262,7 +263,7 @@ echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 <h2 id="创建github-pages">创建Github Pages</h2>
 
 <p>创建GitHub Pages比较简单，只要创建一个格式为<code>yourusername.github.io</code>的仓库即可。
-<img src="/static/media/pic/create_a_github_pages.png" alt="Alert create_a_github_pages" /></p>
+<img src="/media/pic/create_a_github_pages.png" alt="create_a_github_pages" /></p>
 
 <h2 id="部署hugo">部署Hugo</h2>
 
@@ -280,22 +281,21 @@ echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 </ul>
 
 <pre><code class="language-sh">hugo --buildDrafts
-</code></pre>
 
-<ul>
-<li>上传到Github</li>
-</ul>
 
-<p>切换到public目录，然后将整个文件夹全部push到之前创建的仓库里。</p>
+* 上传到Github
 
-<pre><code class="language-sh"> cd public
+切换到public目录，然后将整个文件夹全部push到之前创建的仓库里。
+
+```sh
+cd public
 git init
 git remote add origin git@github.com:lylhw13/yourusername.github.io.git
 git add -A
 git commit -m &quot;first commit&quot;
 git push -u origin master
-# Tips: 
-#if you repository has been init before. Here you may encounter some errors. So you can change the last line as following:
+# Tips:
+# if you repository has been init before. Here you may encounter some errors. So you can change the last line as following:
 # git push -u origin master --force
 </code></pre>
 
@@ -324,6 +324,10 @@ Error: Unable to locate Config file. Perhaps you need to create a new site.
 </code></pre>
 
 <p>是因为当前目录不对，应该首先切换到<code>mysite</code>的根目录下再执行<code>hugo</code>命令。</p>
+
+<h3 id="文章中添加图片">文章中添加图片</h3>
+
+<p>在<code>mysite/static</code>中新建文件夹<code>media</code>，并统一将图片放在这里，但是图片的引用链接应该从<code>media</code>开始，如<code>/media/pic/create_a_github_pages.png</code>。</p>
 
 <h2 id="参考文章">参考文章：</h2>
 
@@ -389,8 +393,7 @@ Error: Unable to locate Config file. Perhaps you need to create a new site.
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="mailto:lylhw13@gmail.com" class="iconfont icon-email" title="email"></a>
-      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
-      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://github.com/lylhw13" class="iconfont icon-github" title="github"></a>
   <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 

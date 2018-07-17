@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="lylhw13" />
-  <meta name="description" content="使用Arch总结 安装声卡驱动 pacman -S pulseaudio 安装Google Chrome 参考Install Google Chrome on Arch Linux. 触摸板设置 参考链接https://wiki.archlinu" />
+  <meta name="description" content="使用Arch总结 reinstall record 参照官方教程时的注意点 1，网络设置环节 2，怎么分区 3，分区规划及设置 my partition strategy Device Size Type Mount Point /dev/sda1 1G EFI System /boot /dev/sda2 50G Linux filesystem / /dev/sda3 50G Linux filesystem /home /dev/sda4 10G Linux" />
 
   <meta name="keywords" content="C&#43;&#43;, Linux, Python" />
 
@@ -50,7 +50,7 @@
 
 
 <meta property="og:title" content="Arch 安装" />
-<meta property="og:description" content="使用Arch总结 安装声卡驱动 pacman -S pulseaudio 安装Google Chrome 参考Install Google Chrome on Arch Linux. 触摸板设置 参考链接https://wiki.archlinu" />
+<meta property="og:description" content="使用Arch总结 reinstall record 参照官方教程时的注意点 1，网络设置环节 2，怎么分区 3，分区规划及设置 my partition strategy Device Size Type Mount Point /dev/sda1 1G EFI System /boot /dev/sda2 50G Linux filesystem / /dev/sda3 50G Linux filesystem /home /dev/sda4 10G Linux" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/linux/arch_install/" />
 
@@ -71,19 +71,19 @@
 
 
 <meta itemprop="name" content="Arch 安装">
-<meta itemprop="description" content="使用Arch总结 安装声卡驱动 pacman -S pulseaudio 安装Google Chrome 参考Install Google Chrome on Arch Linux. 触摸板设置 参考链接https://wiki.archlinu">
+<meta itemprop="description" content="使用Arch总结 reinstall record 参照官方教程时的注意点 1，网络设置环节 2，怎么分区 3，分区规划及设置 my partition strategy Device Size Type Mount Point /dev/sda1 1G EFI System /boot /dev/sda2 50G Linux filesystem / /dev/sda3 50G Linux filesystem /home /dev/sda4 10G Linux">
 
 
 <meta itemprop="datePublished" content="2018-07-01T15:09:30&#43;08:00" />
 <meta itemprop="dateModified" content="2018-07-01T15:09:30&#43;08:00" />
-<meta itemprop="wordCount" content="991">
+<meta itemprop="wordCount" content="1617">
 
 
 
 <meta itemprop="keywords" content="Arch," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Arch 安装"/>
-<meta name="twitter:description" content="使用Arch总结 安装声卡驱动 pacman -S pulseaudio 安装Google Chrome 参考Install Google Chrome on Arch Linux. 触摸板设置 参考链接https://wiki.archlinu"/>
+<meta name="twitter:description" content="使用Arch总结 reinstall record 参照官方教程时的注意点 1，网络设置环节 2，怎么分区 3，分区规划及设置 my partition strategy Device Size Type Mount Point /dev/sda1 1G EFI System /boot /dev/sda2 50G Linux filesystem / /dev/sda3 50G Linux filesystem /home /dev/sda4 10G Linux"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -170,6 +170,7 @@
 <ul>
 <li><a href="#使用arch总结">使用Arch总结</a>
 <ul>
+<li><a href="#reinstall-record">reinstall record</a></li>
 <li><a href="#安装声卡驱动">安装声卡驱动</a></li>
 <li><a href="#安装google-chrome">安装Google Chrome</a></li>
 <li><a href="#触摸板设置">触摸板设置</a></li>
@@ -177,6 +178,11 @@
 <li><a href="#安装显卡驱动">安装显卡驱动</a></li>
 <li><a href="#美化字体">美化字体</a></li>
 <li><a href="#安装中文输入法">安装中文输入法</a></li>
+<li><a href="#wifi-menu">wifi-menu</a>
+<ul>
+<li><a href="#step-1">step 1</a></li>
+<li><a href="#step-2">step 2</a></li>
+</ul></li>
 <li><a href="#error-1">Error 1</a></li>
 </ul></li>
 </ul>
@@ -192,6 +198,110 @@
       
 
 <h1 id="使用arch总结">使用Arch总结</h1>
+
+<h2 id="reinstall-record">reinstall record</h2>
+
+<p>参照官方教程时的注意点
+1，网络设置环节
+2，怎么分区
+3，分区规划及设置</p>
+
+<p>my partition strategy</p>
+
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Size</th>
+<th>Type</th>
+<th>Mount Point</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>/dev/sda1</td>
+<td>1G</td>
+<td>EFI System</td>
+<td>/boot</td>
+</tr>
+
+<tr>
+<td>/dev/sda2</td>
+<td>50G</td>
+<td>Linux filesystem</td>
+<td>/</td>
+</tr>
+
+<tr>
+<td>/dev/sda3</td>
+<td>50G</td>
+<td>Linux filesystem</td>
+<td>/home</td>
+</tr>
+
+<tr>
+<td>/dev/sda4</td>
+<td>10G</td>
+<td>Linux swap</td>
+<td>[SWAP]</td>
+</tr>
+</tbody>
+</table>
+
+<p>After creating the ESP (EFI System Partition), you must format it as FAT32:</p>
+
+<pre><code class="language-sh">mkfs.fat -F32 /dev/sda1
+</code></pre>
+
+<p>format the Linux filesystem:</p>
+
+<pre><code class="language-sh">mkfs.ext4 /dev/sda2
+mkfs.ext4 /dev/sda3
+</code></pre>
+
+<p>format the swap partition:</p>
+
+<pre><code class="language-sh">mkswap /dev/sda4
+swapon /dev/sda4
+</code></pre>
+
+<p>Mount the file systems:</p>
+
+<pre><code class="language-sh">mount /dev/sda2 /mnt # mount the file system on the root partition to /mnt
+
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+
+mkdir /mnt/home
+mount /dev/sda3 /mnt/home
+</code></pre>
+
+<p><code>genfstab</code> will later detect monuted file systems and swap space.</p>
+
+<p>A swap partition can be created with most GNU/Linux partitioning tools. Swap partitions are typically designated as type 82. Even though it is possible to use any partition type as swap, it is recommended to use type 82 in most cases since systemd will automatically detect it and mount it (see below).</p>
+
+<p>选择镜像源</p>
+
+<pre><code class="language-sh">vim /etc/pacman.d/mirrorlist
+</code></pre>
+
+<p>将China的镜像源调整最前面，本身China的镜像源默认只有清华的源，可以添加浙大的源:</p>
+
+<p><code>Server = http://mirrors.zju.edu.cn/archlinux/$repo/os$arch</code>。</p>
+
+<p>吐槽一句，虽然感觉距离浙大的源应该更近，但是浙大源并没有清华源的速度好。</p>
+
+<p>安装基本包，这是一个联网下载的过程：</p>
+
+<pre><code class="language-sh">pacstrap /mnt base base-devel
+</code></pre>
+
+<p>配置Fstab</p>
+
+<pre><code class="language-sh">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab # Generate an fstab file (use -U or -L to define by UUID or labels, respectively):
+cat /mnt/etc/fstab # Check the resulting file in /mnt/etc/fstab afterwards, and edit it in case of errors.
+</code></pre>
 
 <h2 id="安装声卡驱动">安装声卡驱动</h2>
 
@@ -225,7 +335,7 @@ EndSection
 
 <h2 id="partioning">Partioning</h2>
 
-<p>参考链接<a href="https://wiki.archlinux.org/index.php/Partitioning">https://wiki.archlinux.org/index.php/Partitioning</a></p>
+<p>参考链接<a href="https://wiki.archlinux.org/index.php/partitioning#UEFI.2FGPT_example_layout">https://wiki.archlinux.org/index.php/partitioning#UEFI.2FGPT_example_layout</a></p>
 
 <p>UEFI/GPT example layout</p>
 
@@ -421,6 +531,40 @@ export XMODIFIERS=@im=fcitx
 <p>重新登录后让环境变量生效。</p>
 
 <p>警告: 请不要在 .bashrc 设置这些环境变量。bashrc只应用于交互性 bash 会话的初始化，并不应用于非交互性脚本或 X 会话的初始化</p>
+
+<h2 id="wifi-menu">wifi-menu</h2>
+
+<p>新安装的arch，调用<code>wifi-menu</code>输出如下的错误。</p>
+
+<pre><code class="language-sh"># wifi-menu
+Scanning for networks... failed
+No networks found
+</code></pre>
+
+<p>解决办法：</p>
+
+<h3 id="step-1">step 1</h3>
+
+<pre><code class="language-sh">echo &quot;blacklist acer_wmi&quot; &gt; /etc/modprobe.d/acer.conf
+</code></pre>
+
+<p>Reboot, then unblock all WiFi with:</p>
+
+<pre><code class="language-sh">rfkill unblock all
+</code></pre>
+
+<p>其中<code>acer_wmi</code>，可以根据硬件的不同进行相应调整。可以通过命令<code>lsmod</code>显示已经加载到内核中的模块的状态信息，查看有关wmi的信息。</p>
+
+<h3 id="step-2">step 2</h3>
+
+<pre><code class="language-sh">ip link
+ip link set wlp3s0 up
+</code></pre>
+
+<p>如果不进行step 1，直接进行step 2操作，会输出如下错误:
+<code>RTNETLINK answers: Operation not possible due to RF-kill</code></p>
+
+<p>其中<code>wlp3s0</code>可以通过<code>ip link</code>查询出来，一般为<code>wlp</code>开头。</p>
 
 <h2 id="error-1">Error 1</h2>
 

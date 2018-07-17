@@ -76,7 +76,7 @@
 
 <meta itemprop="datePublished" content="2018-07-01T12:12:11&#43;08:00" />
 <meta itemprop="dateModified" content="2018-07-01T12:12:11&#43;08:00" />
-<meta itemprop="wordCount" content="310">
+<meta itemprop="wordCount" content="575">
 
 
 
@@ -150,7 +150,11 @@
 
       <div class="post-meta">
         <span class="post-time"> 2018-07-01 </span>
-        
+        <div class="post-category">
+            
+              <a href="/categories/c&#43;&#43;/"> C&#43;&#43; </a>
+            
+          </div>
         
         
       </div>
@@ -167,6 +171,8 @@
 <li><a href="#c-问题汇总">C++ 问题汇总</a>
 <ul>
 <li><a href="#关于c-c-的输入输出精度">关于C/C++的输入输出精度。</a></li>
+<li><a href="#read-data-line">read data line</a></li>
+<li><a href="#struct-constructor-in-c">struct constructor in c++</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -300,6 +306,36 @@ printf(&quot;%*.*g&quot;, width, precision, d);
 </tr>
 </tbody>
 </table>
+
+<h2 id="read-data-line">read data line</h2>
+
+<h2 id="struct-constructor-in-c">struct constructor in c++</h2>
+
+<p>参考<a href="https://stackoverflow.com/questions/1127396/struct-constructor-in-c">https://stackoverflow.com/questions/1127396/struct-constructor-in-c</a></p>
+
+<p>In C++ the only difference between a class and a struct is that members and base classes are private by default in classes, whereas they are public by default in structs.</p>
+
+<p>So structs can have constructors, and the syntax is the same as for classes.</p>
+
+<p><a href="https://softwareengineering.stackexchange.com/questions/262463/should-we-add-constructors-to-structs">https://softwareengineering.stackexchange.com/questions/262463/should-we-add-constructors-to-structs</a></p>
+
+<p>Sometimes it&rsquo;s appropriate to add constructor to a struct and sometimes it is not.</p>
+
+<p>Adding constructor (any constructor) to a struct prevents using aggregate initializer on it. So if you add a default constructor, you&rsquo;ll also have to define non-default constructor initializing the values. But if you want to ensure that you always initialize all members, it is appropriate.</p>
+
+<p>Adding constructor (any constructor, again) makes it non-POD, but in C++11 most of the rules that previously applied to POD only were changed to apply to standard layout objects and adding constructors don&rsquo;t break that. So the aggregate initializer is basically the only thing you lose. But it is also often a big loss.</p>
+
+<pre><code class="language-c++">//case 1
+struct TestStruct {
+    double number;
+};
+//case 2
+struct TestStruct {
+    double number;
+    TestStruct(double aDouble) : number(aDouble) { }
+    //there is no semicolon in the last line
+};
+</code></pre>
 
     </div>
 

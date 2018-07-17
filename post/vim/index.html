@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Arch_commands - lylhw13 | my blog</title>
+  <title>Vim - lylhw13 | my blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="lylhw13" />
-  <meta name="description" content="some commands on arch journalctl -b -1 -r that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r) shutdown shutdown -r #重启计算机（和reboot）命令一样 shutdown -h #关闭计算机并关闭电源（常用） shutdown -f #" />
+  <meta name="description" content="vim commands 删除到文件结尾 dG #删除到文件结尾 动作录制 参考vim重复操作的宏录制 1 2 3 11 22 33 111 222 333 1111 2222 3333 比如这组数据，我们想删除第一列的数据(以空格分" />
 
   <meta name="keywords" content="C&#43;&#43;, Linux, Python" />
 
@@ -29,7 +29,7 @@
 <meta name="generator" content="Hugo 0.42.1" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/linux/arch_commands/" />
+<link rel="canonical" href="http://localhost:1313/post/vim/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,20 +49,16 @@
 
 
 
-<meta property="og:title" content="Arch_commands" />
-<meta property="og:description" content="some commands on arch journalctl -b -1 -r that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r) shutdown shutdown -r #重启计算机（和reboot）命令一样 shutdown -h #关闭计算机并关闭电源（常用） shutdown -f #" />
+<meta property="og:title" content="Vim" />
+<meta property="og:description" content="vim commands 删除到文件结尾 dG #删除到文件结尾 动作录制 参考vim重复操作的宏录制 1 2 3 11 22 33 111 222 333 1111 2222 3333 比如这组数据，我们想删除第一列的数据(以空格分" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/linux/arch_commands/" />
+<meta property="og:url" content="http://localhost:1313/post/vim/" />
 
 
 
-<meta property="article:published_time" content="2018-07-05T16:05:06&#43;08:00"/>
+<meta property="article:published_time" content="2018-07-06T11:09:09&#43;08:00"/>
 
-<meta property="article:modified_time" content="2018-07-05T16:05:06&#43;08:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2018-07-06T11:09:09&#43;08:00"/>
 
 
 
@@ -70,20 +66,24 @@
 
 
 
-<meta itemprop="name" content="Arch_commands">
-<meta itemprop="description" content="some commands on arch journalctl -b -1 -r that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r) shutdown shutdown -r #重启计算机（和reboot）命令一样 shutdown -h #关闭计算机并关闭电源（常用） shutdown -f #">
-
-
-<meta itemprop="datePublished" content="2018-07-05T16:05:06&#43;08:00" />
-<meta itemprop="dateModified" content="2018-07-05T16:05:06&#43;08:00" />
-<meta itemprop="wordCount" content="112">
 
 
 
-<meta itemprop="keywords" content="Arch," />
+
+<meta itemprop="name" content="Vim">
+<meta itemprop="description" content="vim commands 删除到文件结尾 dG #删除到文件结尾 动作录制 参考vim重复操作的宏录制 1 2 3 11 22 33 111 222 333 1111 2222 3333 比如这组数据，我们想删除第一列的数据(以空格分">
+
+
+<meta itemprop="datePublished" content="2018-07-06T11:09:09&#43;08:00" />
+<meta itemprop="dateModified" content="2018-07-06T11:09:09&#43;08:00" />
+<meta itemprop="wordCount" content="385">
+
+
+
+<meta itemprop="keywords" content="Vim," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Arch_commands"/>
-<meta name="twitter:description" content="some commands on arch journalctl -b -1 -r that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r) shutdown shutdown -r #重启计算机（和reboot）命令一样 shutdown -h #关闭计算机并关闭电源（常用） shutdown -f #"/>
+<meta name="twitter:title" content="Vim"/>
+<meta name="twitter:description" content="vim commands 删除到文件结尾 dG #删除到文件结尾 动作录制 参考vim重复操作的宏录制 1 2 3 11 22 33 111 222 333 1111 2222 3333 比如这组数据，我们想删除第一列的数据(以空格分"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -146,13 +146,13 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Arch_commands</h1>
+      <h1 class="post-title">Vim</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-07-05 </span>
+        <span class="post-time"> 2018-07-06 </span>
         <div class="post-category">
             
-              <a href="/categories/linux/"> Linux </a>
+              <a href="/categories/vim/"> Vim </a>
             
           </div>
         
@@ -168,9 +168,11 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#some-commands-on-arch">some commands on arch</a>
+<li><a href="#vim-commands">vim commands</a>
 <ul>
-<li><a href="#shutdown">shutdown</a></li>
+<li><a href="#删除到文件结尾">删除到文件结尾</a></li>
+<li><a href="#动作录制">动作录制</a></li>
+<li><a href="#跳转到指定行">跳转到指定行</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -184,21 +186,55 @@
     <div class="post-content">
       
 
-<h1 id="some-commands-on-arch">some commands on arch</h1>
+<h1 id="vim-commands">vim commands</h1>
 
-<pre><code class="language-sh">journalctl -b -1 -r
+<h2 id="删除到文件结尾">删除到文件结尾</h2>
+
+<pre><code class="language-vim">dG  #删除到文件结尾
 </code></pre>
 
-<p>that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r)</p>
+<h2 id="动作录制">动作录制</h2>
 
-<h2 id="shutdown">shutdown</h2>
+<p>参考<a href="https://www.cnblogs.com/ini_always/archive/2011/09/21/2184446.html">vim重复操作的宏录制</a></p>
 
-<pre><code class="language-sh">shutdown -r #重启计算机（和reboot）命令一样
-shutdown -h #关闭计算机并关闭电源（常用）
-shutdown -f #重启计算机，不进行磁盘检测
-shutdown -F #重启计算机并进行磁盘检测
-shutdown -c #取消正在执行的关机命令
+<pre><code class="language-txt">1 2 3
+11 22 33
+111 222 333
+1111 2222 3333
 </code></pre>
+
+<p>比如这组数据，我们想删除第一列的数据(以空格分割)，如果数据行数特别多，就需要进行动作录制：</p>
+
+<p>通过下面一段命令可以实现：</p>
+
+<pre><code class="language-vim">gg  # 将光标定位到首行
+qa  # 在normal模式下开始录制，录制的宏保存在a寄存器，寄存器名称也可以为b,c,d等。
+0   # 调到行首
+v   # 切换到visual模式
+f   # 开始查找命令
+    # 查找空格
+x   # 删除
+j   # 向下移动一行
+q   # 结束录制
+3@a # 执行宏命令3次
+</code></pre>
+
+<h2 id="跳转到指定行">跳转到指定行</h2>
+
+<p>参考<a href="https://blog.csdn.net/u011848617/article/details/38434359">vim跳转到指定行</a></p>
+
+<p>下面三种都可以，其中n为行号。</p>
+
+<pre><code class="language-vim">ngg / nG
+:n
+vim +n filename #注意 + 和 n 之间没有空格
+</code></pre>
+
+<p>三者的区别在于，<code>ngg / nG</code>在编辑模式下输入，所以不需要按回车键，而<code>:n</code>在命令模式下输入还需要按回车键命令才会生效，<code>vim +n filename</code> 只能在打开文件上跳转。</p>
+
+<p>ctrl + g 会返回如下信息：
+<code>&quot;filename&quot; m lines --n%--</code>
+其中m为总行数，n为当前行所在整个文件的位置比例。</p>
 
     </div>
 
@@ -210,7 +246,7 @@ shutdown -c #取消正在执行的关机命令
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2018-07-05</span>
+    <span class="item-content">2018-07-06</span>
   </p>
   
   
@@ -222,21 +258,21 @@ shutdown -c #取消正在执行的关机命令
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/tags/arch/">Arch</a>
+          <a href="/tags/vim/">Vim</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/vim/">
+          <a class="prev" href="/post/android/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Vim</span>
+            <span class="prev-text nav-default">Android</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/linux/arch_cannot_power_off/">
-            <span class="next-text nav-default">Arch_cannot_power_off</span>
+          <a class="next" href="/post/linux/arch_commands/">
+            <span class="next-text nav-default">Arch_commands</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

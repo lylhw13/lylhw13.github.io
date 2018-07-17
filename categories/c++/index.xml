@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on lylhw13 | my blog</title>
-    <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+    <link>http://localhost:1313/categories/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Jul 2018 15:33:08 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/categories/c++/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

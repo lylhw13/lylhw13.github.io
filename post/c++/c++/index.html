@@ -76,7 +76,7 @@
 
 <meta itemprop="datePublished" content="2018-07-01T12:12:11&#43;08:00" />
 <meta itemprop="dateModified" content="2018-07-01T12:12:11&#43;08:00" />
-<meta itemprop="wordCount" content="575">
+<meta itemprop="wordCount" content="630">
 
 
 
@@ -173,6 +173,7 @@
 <li><a href="#关于c-c-的输入输出精度">关于C/C++的输入输出精度。</a></li>
 <li><a href="#read-data-line">read data line</a></li>
 <li><a href="#struct-constructor-in-c">struct constructor in c++</a></li>
+<li><a href="#c-vector-iterator-won-t-work-in-templates">C++: Vector iterator won&rsquo;t work in templates</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -335,6 +336,28 @@ struct TestStruct {
     TestStruct(double aDouble) : number(aDouble) { }
     //there is no semicolon in the last line
 };
+</code></pre>
+
+<h2 id="c-vector-iterator-won-t-work-in-templates">C++: Vector iterator won&rsquo;t work in templates</h2>
+
+<pre><code class="language-c++">template&lt;typename A&gt;
+void addAllVector(std::vector&lt;A&gt; &amp;dest, const std::vector&lt;A&gt; &amp;src) {
+    std::vector&lt;A&gt;::const_iterator it;
+    for (it = src.begin(); it!=src.end();  ++it) {
+        dest.push_back(*it);
+    }
+}  
+</code></pre>
+
+<p>change to</p>
+
+<pre><code class="language-c++">template&lt;typename A&gt;
+void addAllVector(std::vector&lt;A&gt; &amp;dest, const std::vector&lt;A&gt; &amp;src) {
+    typename std::vector&lt;A&gt;::const_iterator it;     //this line changed
+    for (it = src.begin(); it!=src.end();  ++it) {
+        dest.push_back(*it);
+    }
+}  
 </code></pre>
 
     </div>

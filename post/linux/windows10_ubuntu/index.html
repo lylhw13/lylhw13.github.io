@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Windows10 Ubuntu Dual System - lylhw13 | my blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="lylhw13" />
+  <meta name="description" content="在Acer笔记本上安装ubuntu&#43;Windows双系统 系统配置： windows system: Windows10 home PC: Acer-Aspire-4750 Linux system: Ubuntu16.04LTS 安装方法参考win10 ,ubuntu双系统安装避坑指南 这" />
+
+  <meta name="keywords" content="C&#43;&#43;, Linux, Python" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.42.1" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/linux/windows10_ubuntu/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Windows10 Ubuntu Dual System" />
+<meta property="og:description" content="在Acer笔记本上安装ubuntu&#43;Windows双系统 系统配置： windows system: Windows10 home PC: Acer-Aspire-4750 Linux system: Ubuntu16.04LTS 安装方法参考win10 ,ubuntu双系统安装避坑指南 这" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/linux/windows10_ubuntu/" />
+
+
+
+<meta property="article:published_time" content="2018-10-27T16:27:29&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-10-27T16:27:29&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Windows10 Ubuntu Dual System">
+<meta itemprop="description" content="在Acer笔记本上安装ubuntu&#43;Windows双系统 系统配置： windows system: Windows10 home PC: Acer-Aspire-4750 Linux system: Ubuntu16.04LTS 安装方法参考win10 ,ubuntu双系统安装避坑指南 这">
+
+
+<meta itemprop="datePublished" content="2018-10-27T16:27:29&#43;08:00" />
+<meta itemprop="dateModified" content="2018-10-27T16:27:29&#43;08:00" />
+<meta itemprop="wordCount" content="1004">
+
+
+
+<meta itemprop="keywords" content="Windows,Ubuntu,Linux,Dual System," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows10 Ubuntu Dual System"/>
+<meta name="twitter:description" content="在Acer笔记本上安装ubuntu&#43;Windows双系统 系统配置： windows system: Windows10 home PC: Acer-Aspire-4750 Linux system: Ubuntu16.04LTS 安装方法参考win10 ,ubuntu双系统安装避坑指南 这"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">lylhw13</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">lylhw13</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Windows10 Ubuntu Dual System</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-10-27 </span>
+        <div class="post-category">
+            
+              <a href="/categories/windows/"> Windows </a>
+            
+              <a href="/categories/linux/"> Linux </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#在acer笔记本上安装ubuntu-windows双系统">在Acer笔记本上安装ubuntu+Windows双系统</a></li>
+<li><a href="#利用ubuntu搭建time-capsule">利用ubuntu搭建Time Capsule</a>
+<ul>
+<li><a href="#安装并配置netatalk">安装并配置Netatalk</a></li>
+<li><a href="#配置avahi">配置Avahi</a></li>
+<li><a href="#重启相应服务">重启相应服务：</a></li>
+<li><a href="#mac端">Mac端</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<h1 id="在acer笔记本上安装ubuntu-windows双系统">在Acer笔记本上安装ubuntu+Windows双系统</h1>
+
+<p>系统配置：</p>
+
+<ul>
+<li>windows system:   Windows10 home</li>
+<li>PC:   Acer-Aspire-4750</li>
+<li>Linux system: Ubuntu16.04LTS</li>
+</ul>
+
+<p>安装方法参考<a href="https://segmentfault.com/a/1190000014523888">win10 ,ubuntu双系统安装避坑指南</a></p>
+
+<p>这里采用的分区方案：</p>
+
+<table>
+<thead>
+<tr>
+<th>挂载点</th>
+<th>格式类型</th>
+<th>大小</th>
+<th>分区类型</th>
+<th>新分区的位置</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>/boot</td>
+<td>ext4</td>
+<td>300M</td>
+<td>主分区</td>
+<td>空间起始位置</td>
+</tr>
+
+<tr>
+<td>/</td>
+<td>ext4</td>
+<td>30G</td>
+<td>逻辑分区</td>
+<td>空间起始位置</td>
+</tr>
+
+<tr>
+<td>swap</td>
+<td>swap</td>
+<td>10G</td>
+<td>逻辑分区</td>
+<td>空间起始位置</td>
+</tr>
+
+<tr>
+<td>/home</td>
+<td>ext4</td>
+<td>70G</td>
+<td>逻辑分区</td>
+<td>空间起始位置</td>
+</tr>
+</tbody>
+</table>
+
+<p>注：这里的分区类型，好像并不重要。参考<a href="https://askubuntu.com/questions/121197/ubuntu-installation-partitioning-logical-or-primary">Ubuntu installation partitioning: Logical or primary?</a></p>
+
+<p>易忽略点：
+在划分分区结束，准备安装前，要将<code>安装启动引导器的设备</code>选择为挂载点为<code>/boot</code>的设备。</p>
+
+<p>注意问题：</p>
+
+<p>1， 这里没有用EastBCD去重新引导Ubuntu，似乎也能很好的引导系统。</p>
+
+<p>2， 因为笔记本较旧，本身系统的安装方式为BISO模式，安装系统时会出现如下警告：</p>
+
+<blockquote>
+<p>在win10 的基础上使用U盘安装ubuntu双系统的时候，出现问题。机器以uefi模式启动了安装器，但是似乎已经存在使用bios兼容模式的系统。如果继续以uefi模式安装debian，可能非常难以重启进入其他bios模式的系统。如果希望以uefi模式安装且无意再启动现有的系统，此处有强制选项。如果要保持现有系统可启动，不要选择强制uefi安装。</p>
+</blockquote>
+
+<p>解决方法：
+使用UltraISO给U盘刻录ubuntu 系统，刻录成功后，打开U盘，删除EFI文件夹。再进行正常的安装即可。
+参考<a href="https://blog.csdn.net/lx10271129/article/details/77677179">解决安装ubuntu系统时，出现机器以UEFI模式启动了安装器的问题</a></p>
+
+<h1 id="利用ubuntu搭建time-capsule">利用ubuntu搭建Time Capsule</h1>
+
+<ul>
+<li>System:   Ubuntu 16.04 LTS 64bit</li>
+</ul>
+
+<p>安装方法参考<a href="https://blog.e9china.net/share/yonglinuxdajiantimemachineeeubuntupianqincekeyong.html">用Linux搭建Time Machine – Ubuntu篇(亲测可用)</a></p>
+
+<h2 id="安装并配置netatalk">安装并配置Netatalk</h2>
+
+<pre><code class="language-sh">sudo apt-get install netatalk
+sudo vim /etc/netatalk/AppleVolumes.default
+</code></pre>
+
+<p>用&rdquo;#&ldquo;将<code>～/ “Home Directory”</code> 这行注释掉，并在最后一行添加希望存放的目录。
+这里在最后一行添加：</p>
+
+<pre><code class="language-sh">/home/hello/TimeCapsule &quot;TimeCapsule&quot; options:tm
+</code></pre>
+
+<p>创建相应目录，并修改权限：</p>
+
+<pre><code class="language-sh">sudo mkdir /home/hello/TimeCapsule
+sudo chmod -R 777 /home/hello/TimeCapsule
+</code></pre>
+
+<h2 id="配置avahi">配置Avahi</h2>
+
+<p>Ubuntu默认带有Avahi，因此这里不再安装，仅进行配置。</p>
+
+<pre><code class="language-sh">sudo vim /etc/avahi/services/afpd.service       #创建并打开
+</code></pre>
+
+<p>在<code>afpd.service</code>中写入如下内容：</p>
+
+<pre><code class="language-sh">%h
+_afpovertcp._tcp
+548
+_device-info._tcp
+0
+model=Xserve
+</code></pre>
+
+<h2 id="重启相应服务">重启相应服务：</h2>
+
+<pre><code class="language-sh">sudo service netatalk restart
+sudo service avahi-daemon restart
+</code></pre>
+
+<p>Linux端配置结束。</p>
+
+<h2 id="mac端">Mac端</h2>
+
+<p>在Mac中打开Finder，commande+k打开&rdquo;Connect to Server&rdquo;, 并在<code>Server Address</code>中输入<code>afp://your.server.ip.address</code>，点击connect。
+然后打开Time Machine，进行相关设置并备份。</p>
+
+<p>Tips：
+在Ubuntu输入<code>ifconfig</code>，可以查看当前机器ip。</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">lylhw13</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2018-10-27</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/windows/">Windows</a>
+          
+          <a href="/tags/ubuntu/">Ubuntu</a>
+          
+          <a href="/tags/linux/">Linux</a>
+          
+          <a href="/tags/dual-system/">Dual System</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/">
+            <span class="next-text nav-default">The system cannot find the file specified(USB Drive Locked)</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:lylhw13@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/lylhw13" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">lylhw13</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

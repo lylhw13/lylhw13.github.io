@@ -6,18 +6,18 @@
     <description>Recent content in Linux on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Jul 2018 16:05:06 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jul 2018 15:09:30 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Arch_commands</title>
-      <link>http://localhost:1313/post/linux/arch_commands/</link>
-      <pubDate>Thu, 05 Jul 2018 16:05:06 +0800</pubDate>
+      <title>Arch 安装</title>
+      <link>http://localhost:1313/post/linux/arch_install/</link>
+      <pubDate>Sun, 01 Jul 2018 15:09:30 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/linux/arch_commands/</guid>
-      <description>some commands on arch journalctl -b -1 -r that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r) shutdown shutdown -r #重启计算机（和reboot）命令一样 shutdown -h #关闭计算机并关闭电源（常用） shutdown -f #</description>
+      <guid>http://localhost:1313/post/linux/arch_install/</guid>
+      <description>使用Arch总结 reinstall record 参照官方教程时的注意点 1，网络设置环节 2，怎么分区 3，分区规划及设置 my partition strategy Device Size Type Mount Point /dev/sda1 1G EFI System /boot /dev/sda2 50G Linux filesystem / /dev/sda3 50G Linux filesystem /home /dev/sda4 10G Linux</description>
     </item>
     
   </channel>

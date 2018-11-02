@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on lylhw13 | my blog</title>
+    <link>http://localhost:1313/categories/python/</link>
+    <description>Recent content in Python on lylhw13 | my blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Jul 2018 17:35:52 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Commands summary</title>
+      <link>http://localhost:1313/post/python/commands_summary/</link>
+      <pubDate>Thu, 26 Jul 2018 17:35:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/python/commands_summary/</guid>
+      <description>some commands If you want to write bytes then you should open the file in binary mode. f = open(&#39;/tmp/output&#39;, &#39;wb&#39;) append vs extend https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python append: Appends object at the end. x = [1, 2, 3] x.append([4, 5]) print (x) gives you: [1, 2, 3, [4, 5]] extend: Extends list by appending elements from the iterable. x = [1, 2, 3] x.extend([4, 5]) print (x) gives you: [1, 2, 3,</description>
+    </item>
+    
+  </channel>
+</rss>

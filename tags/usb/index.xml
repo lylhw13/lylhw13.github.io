@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>USB on lylhw13 | my blog</title>
+    <link>http://localhost:1313/tags/usb/</link>
+    <description>Recent content in USB on lylhw13 | my blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Oct 2018 16:30:31 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The system cannot find the file specified(USB Drive Locked)</title>
+      <link>http://localhost:1313/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/</link>
+      <pubDate>Fri, 26 Oct 2018 16:30:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/</guid>
+      <description>System: Windows
+Refer to youtube videos The system cannot find the file specified (USB Drive Locked).
+&amp;gt; diskpart # start DiskPart &amp;gt; list disk &amp;gt; select disk 1 # disk 1 is the usb flash &amp;gt; clean DiskPart has encountered an error: The device is not ready. See the System Event log for more information. &amp;gt; list disk &amp;gt; select disk 1 # re-select the disk &amp;gt; clean # re-clean DiskPart succeeded in cleaning the disk.</description>
+    </item>
+    
+  </channel>
+</rss>

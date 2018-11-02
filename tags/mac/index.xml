@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on lylhw13 | my blog</title>
+    <link>http://localhost:1313/tags/mac/</link>
+    <description>Recent content in Mac on lylhw13 | my blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Oct 2018 15:38:19 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac下Apache &#43; Php &#43; Mysql的环境配置</title>
+      <link>http://localhost:1313/post/mac/mac-apache-php-mysql/</link>
+      <pubDate>Sat, 20 Oct 2018 15:38:19 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/mac/mac-apache-php-mysql/</guid>
+      <description>mac 下配置Apache+PHP+Mysql环境 参考https://www.jianshu.com/p/2fb9a3bb12f6，主要步骤按照其</description>
+    </item>
+    
+  </channel>
+</rss>

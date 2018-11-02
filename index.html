@@ -57,7 +57,7 @@
 
 
 
-<meta property="og:updated_time" content="2018-07-17T15:33:08&#43;08:00"/>
+<meta property="og:updated_time" content="2018-10-27T16:27:29&#43;08:00"/>
 
 
 
@@ -140,102 +140,12 @@
     
       <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/c&#43;&#43;/qt/">QT</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/linux/windows10_ubuntu/">Windows10 Ubuntu Dual System</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2018-07-17 </span>
+      <span class="post-time"> 2018-10-27 </span>
       <div class="post-category">
           
-            <a href="/categories/c&#43;&#43;/"> C&#43;&#43; </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      QT summary QVector doesn&rsquo;t have range-construction. 更全面的分析如下https://marcmutz.wordpress.com/effective-qt/containers/
-    </div>
-    <div class="read-more">
-      <a href="/post/c&#43;&#43;/qt/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/visual_studio/vs2005_summary/">Vs2005_summary</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018-07-16 </span>
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      the summary for vs 2005 Error 1 当尝试debug的时候，提示错误如下： Unable to start program'***.exe'. The requested operation requires elevation. 这是提示权限不够，重新以管理员身份运行vs2005，即可。
-    </div>
-    <div class="read-more">
-      <a href="/post/visual_studio/vs2005_summary/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/android/">Android</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018-07-07 </span>
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      adb adb devices #显示所有设备地址 adb -s 192.168.240.101:5555 #链接到指定设备
-    </div>
-    <div class="read-more">
-      <a href="/post/android/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/vim/">Vim</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018-07-06 </span>
-      <div class="post-category">
-          
-            <a href="/categories/vim/"> Vim </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      vim commands 删除到文件结尾 dG #删除到文件结尾 动作录制 参考vim重复操作的宏录制 1 2 3 11 22 33 111 222 333 1111 2222 3333 比如这组数据，我们想删除第一列的数据(以空格分
-    </div>
-    <div class="read-more">
-      <a href="/post/vim/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux/arch_commands/">Arch_commands</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018-07-05 </span>
-      <div class="post-category">
+            <a href="/categories/windows/"> Windows </a>
           
             <a href="/categories/linux/"> Linux </a>
           
@@ -246,10 +156,112 @@
   
   <div class="post-content">
     <div class="post-summary">
-      some commands on arch journalctl -b -1 -r that will display the logs for your last boot (-b -1), starting at the last messages in the log (-r) shutdown shutdown -r #重启计算机（和reboot）命令一样 shutdown -h #关闭计算机并关闭电源（常用） shutdown -f #
+      在Acer笔记本上安装ubuntu+Windows双系统 系统配置： windows system: Windows10 home PC: Acer-Aspire-4750 Linux system: Ubuntu16.04LTS 安装方法参考win10 ,ubuntu双系统安装避坑指南 这
     </div>
     <div class="read-more">
-      <a href="/post/linux/arch_commands/" class="read-more-link">Read more..</a>
+      <a href="/post/linux/windows10_ubuntu/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/">The system cannot find the file specified(USB Drive Locked)</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2018-10-26 </span>
+      <div class="post-category">
+          
+            <a href="/categories/windows/"> Windows </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      System: Windows
+Refer to youtube videos The system cannot find the file specified (USB Drive Locked).
+&gt; diskpart # start DiskPart &gt; list disk &gt; select disk 1 # disk 1 is the usb flash &gt; clean DiskPart has encountered an error: The device is not ready. See the System Event log for more information. &gt; list disk &gt; select disk 1 # re-select the disk &gt; clean # re-clean DiskPart succeeded in cleaning the disk.
+    </div>
+    <div class="read-more">
+      <a href="/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/mac/mactips/">Mac tips</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2018-10-21 </span>
+      <div class="post-category">
+          
+            <a href="/categories/mac/"> Mac </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+       Shortcuts  control + a to go beginning of a line control + e to go end of a line  Terminal # calculate md5 checksum md5 /tmp/filename # calculate SHA-1 checksum shasum -a 1 filename # calculate SHA-256 checksum shasum -a 256 filename  
+    </div>
+    <div class="read-more">
+      <a href="/post/mac/mactips/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/mac/mac-apache-php-mysql/">Mac下Apache &#43; Php &#43; Mysql的环境配置</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2018-10-20 </span>
+      <div class="post-category">
+          
+            <a href="/categories/mac/"> Mac </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      mac 下配置Apache+PHP+Mysql环境 参考https://www.jianshu.com/p/2fb9a3bb12f6，主要步骤按照其
+    </div>
+    <div class="read-more">
+      <a href="/post/mac/mac-apache-php-mysql/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/windows/windows-apache-php-mysql/">Windows 10下Apache &#43; PHP &#43; Mysql的环境配置</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2018-09-11 </span>
+      <div class="post-category">
+          
+            <a href="/categories/windows/"> Windows </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      参考文章如下: Windows下Apache+PHP+MySQL搭建历程, How to install web server on Windows 10 (Apache 2.4, PHP 7, MySQL 8.0 and phpMyAdmin) 模块选择 Apache 2.4.34, Apache的软件包为h
+    </div>
+    <div class="read-more">
+      <a href="/post/windows/windows-apache-php-mysql/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>

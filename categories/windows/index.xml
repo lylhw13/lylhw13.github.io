@@ -6,27 +6,47 @@
     <description>Recent content in Windows on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Jul 2018 14:36:08 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Oct 2018 16:27:29 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Windows</title>
+      <title>Windows10 Ubuntu Dual System</title>
+      <link>http://localhost:1313/post/linux/windows10_ubuntu/</link>
+      <pubDate>Sat, 27 Oct 2018 16:27:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/linux/windows10_ubuntu/</guid>
+      <description>在Acer笔记本上安装ubuntu+Windows双系统 系统配置： windows system: Windows10 home PC: Acer-Aspire-4750 Linux system: Ubuntu16.04LTS 安装方法参考win10 ,ubuntu双系统安装避坑指南 这</description>
+    </item>
+    
+    <item>
+      <title>The system cannot find the file specified(USB Drive Locked)</title>
+      <link>http://localhost:1313/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/</link>
+      <pubDate>Fri, 26 Oct 2018 16:30:31 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/</guid>
+      <description>System: Windows
+Refer to youtube videos The system cannot find the file specified (USB Drive Locked).
+&amp;gt; diskpart # start DiskPart &amp;gt; list disk &amp;gt; select disk 1 # disk 1 is the usb flash &amp;gt; clean DiskPart has encountered an error: The device is not ready. See the System Event log for more information. &amp;gt; list disk &amp;gt; select disk 1 # re-select the disk &amp;gt; clean # re-clean DiskPart succeeded in cleaning the disk.</description>
+    </item>
+    
+    <item>
+      <title>Windows 10下Apache &#43; PHP &#43; Mysql的环境配置</title>
+      <link>http://localhost:1313/post/windows/windows-apache-php-mysql/</link>
+      <pubDate>Tue, 11 Sep 2018 09:55:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/windows/windows-apache-php-mysql/</guid>
+      <description>参考文章如下: Windows下Apache+PHP+MySQL搭建历程, How to install web server on Windows 10 (Apache 2.4, PHP 7, MySQL 8.0 and phpMyAdmin) 模块选择 Apache 2.4.34, Apache的软件包为h</description>
+    </item>
+    
+    <item>
+      <title>Windows的操作总结</title>
       <link>http://localhost:1313/post/windows/windows/</link>
       <pubDate>Tue, 03 Jul 2018 14:36:08 +0800</pubDate>
       
       <guid>http://localhost:1313/post/windows/windows/</guid>
-      <description>Windows的操作总结 添加软件的自动启动 将某软件设置为开机自启动，只需要将该脚本生成一个“快捷方式”，然后将此快捷方式放置到程序自启动文件</description>
-    </item>
-    
-    <item>
-      <title>Batch</title>
-      <link>http://localhost:1313/post/windows/batch/</link>
-      <pubDate>Tue, 03 Jul 2018 14:02:11 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/windows/batch/</guid>
-      <description>Windows中Bacth命令总结 将Windows中cmd的输出结果重定向到文件里 ping archlinux.org &amp;gt; D:/log.txt #会覆盖之前的结果 ping archlinux.org &amp;gt;&amp;gt; D:/log.txt #在之前的基础上追加输出</description>
+      <description>添加软件的自动启动 将某软件设置为开机自启动，只需要将该脚本生成一个“快捷方式”，然后将此快捷方式放置到程序自启动文件夹之下即可,一般路径为：</description>
     </item>
     
   </channel>

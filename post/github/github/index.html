@@ -76,7 +76,7 @@
 
 <meta itemprop="datePublished" content="2018-07-01T11:57:30&#43;08:00" />
 <meta itemprop="dateModified" content="2018-07-01T11:57:30&#43;08:00" />
-<meta itemprop="wordCount" content="459">
+<meta itemprop="wordCount" content="584">
 
 
 
@@ -176,7 +176,14 @@
 </ul></li>
 <li><a href="#error-2">Error 2</a>
 <ul>
-<li><a href="#解决办法-1">解决办法：</a></li>
+<li><a href="#解决办法-1">解决办法</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#git-commands">git commands</a>
+<ul>
+<li><a href="#windows下无法手动创建-gitignore-文件">Windows下无法手动创建 <code>.gitignore</code>文件</a>
+<ul>
+<li><a href="#解决办法-2">解决办法</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -218,11 +225,24 @@ error: failed to push some refs to &quot;xxxxxxx&quot;
 <p>这种错误是远程repository和我本地的repository版本冲突导致的。
 产生这种问题是因为分别在远程的repository和本地的repository执行<code>git init</code>，这样在执行<code>git push</code>的时候就会产生这样版本冲突的问题。</p>
 
-<h3 id="解决办法-1">解决办法：</h3>
+<h3 id="解决办法-1">解决办法</h3>
 
 <p>如果远程repository不重要，就强制push:</p>
 
 <pre><code class="language-git">git push -f origin master
+</code></pre>
+
+<h1 id="git-commands">git commands</h1>
+
+<h2 id="windows下无法手动创建-gitignore-文件">Windows下无法手动创建 <code>.gitignore</code>文件</h2>
+
+<p>在Windows下面试图通过创建一个文本文件，然后更改名称为<code>.gitignore</code>的时候，系统会提醒说:<code>You must type a file name.</code>。造成无法创建类似名称的文件。</p>
+
+<h3 id="解决办法-2">解决办法</h3>
+
+<p>采用命令行生成这样一个文件。</p>
+
+<pre><code class="language-sh">touch .gitignore
 </code></pre>
 
     </div>

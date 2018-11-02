@@ -6,49 +6,105 @@
     <description>Recent content in Posts on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Jul 2018 15:33:08 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Oct 2018 16:27:29 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>QT</title>
-      <link>http://localhost:1313/post/c&#43;&#43;/qt/</link>
-      <pubDate>Tue, 17 Jul 2018 15:33:08 +0800</pubDate>
+      <title>Windows10 Ubuntu Dual System</title>
+      <link>http://localhost:1313/post/linux/windows10_ubuntu/</link>
+      <pubDate>Sat, 27 Oct 2018 16:27:29 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/c&#43;&#43;/qt/</guid>
-      <description>QT summary QVector doesn&amp;rsquo;t have range-construction. 更全面的分析如下https://marcmutz.wordpress.com/effective-qt/containers/</description>
+      <guid>http://localhost:1313/post/linux/windows10_ubuntu/</guid>
+      <description>在Acer笔记本上安装ubuntu+Windows双系统 系统配置： windows system: Windows10 home PC: Acer-Aspire-4750 Linux system: Ubuntu16.04LTS 安装方法参考win10 ,ubuntu双系统安装避坑指南 这</description>
     </item>
     
     <item>
-      <title>Vs2005_summary</title>
-      <link>http://localhost:1313/post/visual_studio/vs2005_summary/</link>
-      <pubDate>Mon, 16 Jul 2018 09:12:22 +0800</pubDate>
+      <title>The system cannot find the file specified(USB Drive Locked)</title>
+      <link>http://localhost:1313/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/</link>
+      <pubDate>Fri, 26 Oct 2018 16:30:31 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/visual_studio/vs2005_summary/</guid>
-      <description>the summary for vs 2005 Error 1 当尝试debug的时候，提示错误如下： Unable to start program&#39;***.exe&#39;. The requested operation requires elevation. 这是提示权限不够，重新以管理员身份运行vs2005，即可。</description>
+      <guid>http://localhost:1313/post/windows/the_system_cannot_find_the_file_specifiedusb_drive_locked/</guid>
+      <description>System: Windows
+Refer to youtube videos The system cannot find the file specified (USB Drive Locked).
+&amp;gt; diskpart # start DiskPart &amp;gt; list disk &amp;gt; select disk 1 # disk 1 is the usb flash &amp;gt; clean DiskPart has encountered an error: The device is not ready. See the System Event log for more information. &amp;gt; list disk &amp;gt; select disk 1 # re-select the disk &amp;gt; clean # re-clean DiskPart succeeded in cleaning the disk.</description>
     </item>
     
     <item>
-      <title>Android</title>
-      <link>http://localhost:1313/post/android/</link>
-      <pubDate>Sat, 07 Jul 2018 15:21:00 +0800</pubDate>
+      <title>Mac tips</title>
+      <link>http://localhost:1313/post/mac/mactips/</link>
+      <pubDate>Sun, 21 Oct 2018 10:33:50 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/android/</guid>
-      <description>adb adb devices #显示所有设备地址 adb -s 192.168.240.101:5555 #链接到指定设备</description>
+      <guid>http://localhost:1313/post/mac/mactips/</guid>
+      <description> Shortcuts  control + a to go beginning of a line control + e to go end of a line  Terminal # calculate md5 checksum md5 /tmp/filename # calculate SHA-1 checksum shasum -a 1 filename # calculate SHA-256 checksum shasum -a 256 filename  </description>
     </item>
     
     <item>
-      <title>Vim</title>
+      <title>Mac下Apache &#43; Php &#43; Mysql的环境配置</title>
+      <link>http://localhost:1313/post/mac/mac-apache-php-mysql/</link>
+      <pubDate>Sat, 20 Oct 2018 15:38:19 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/mac/mac-apache-php-mysql/</guid>
+      <description>mac 下配置Apache+PHP+Mysql环境 参考https://www.jianshu.com/p/2fb9a3bb12f6，主要步骤按照其</description>
+    </item>
+    
+    <item>
+      <title>Windows 10下Apache &#43; PHP &#43; Mysql的环境配置</title>
+      <link>http://localhost:1313/post/windows/windows-apache-php-mysql/</link>
+      <pubDate>Tue, 11 Sep 2018 09:55:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/windows/windows-apache-php-mysql/</guid>
+      <description>参考文章如下: Windows下Apache+PHP+MySQL搭建历程, How to install web server on Windows 10 (Apache 2.4, PHP 7, MySQL 8.0 and phpMyAdmin) 模块选择 Apache 2.4.34, Apache的软件包为h</description>
+    </item>
+    
+    <item>
+      <title>一些 markdown 语法</title>
+      <link>http://localhost:1313/post/markdown/</link>
+      <pubDate>Mon, 10 Sep 2018 15:31:16 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/markdown/</guid>
+      <description>https://markdown-zh.readthedocs.io/en/latest/blockelements/ Markdown 中可以简便地只在每一个需要强制换行的段落的首行前面加上一个 &amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>http://localhost:1313/post/mysql/</link>
+      <pubDate>Wed, 05 Sep 2018 16:15:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/mysql/</guid>
+      <description>install mysql 安装的版本为 mysql-installer-community-8.0.12.0.msi 安装完成后遇到如下问题 参考https://stackoverflow.com/questions/49194719/aut</description>
+    </item>
+    
+    <item>
+      <title>上传新项目到github上</title>
+      <link>http://localhost:1313/post/github/%E4%B8%8A%E4%BC%A0%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%88%B0github%E4%B8%8A/</link>
+      <pubDate>Tue, 31 Jul 2018 11:12:10 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/github/%E4%B8%8A%E4%BC%A0%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%88%B0github%E4%B8%8A/</guid>
+      <description>在本地文件夹下面的操作： cd you_work_directory git init git add README.md git commit -m &amp;quot;first commit&amp;quot; 在github网页端，新建一个仓库，但是不要初始化。接着执行 git remote add origin git@github.com:lylhw13/new_repository.git git push -u origin master</description>
+    </item>
+    
+    <item>
+      <title>Commands summary</title>
+      <link>http://localhost:1313/post/python/commands_summary/</link>
+      <pubDate>Thu, 26 Jul 2018 17:35:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/python/commands_summary/</guid>
+      <description>some commands If you want to write bytes then you should open the file in binary mode. f = open(&#39;/tmp/output&#39;, &#39;wb&#39;) append vs extend https://stackoverflow.com/questions/252703/difference-between-append-vs-extend-list-methods-in-python append: Appends object at the end. x = [1, 2, 3] x.append([4, 5]) print (x) gives you: [1, 2, 3, [4, 5]] extend: Extends list by appending elements from the iterable. x = [1, 2, 3] x.extend([4, 5]) print (x) gives you: [1, 2, 3,</description>
+    </item>
+    
+    <item>
+      <title>Vim commands</title>
       <link>http://localhost:1313/post/vim/</link>
       <pubDate>Fri, 06 Jul 2018 11:09:09 +0800</pubDate>
       
       <guid>http://localhost:1313/post/vim/</guid>
-      <description>vim commands 删除到文件结尾 dG #删除到文件结尾 动作录制 参考vim重复操作的宏录制 1 2 3 11 22 33 111 222 333 1111 2222 3333 比如这组数据，我们想删除第一列的数据(以空格分</description>
+      <description>删除到文件结尾 dG #删除到文件结尾 动作录制 参考vim重复操作的宏录制 1 2 3 11 22 33 111 222 333 1111 2222 3333 比如这组数据，我们想删除第一列的数据(以空格分割)</description>
     </item>
     
     <item>
-      <title>Arch_commands</title>
+      <title>Linux commands</title>
       <link>http://localhost:1313/post/linux/arch_commands/</link>
       <pubDate>Thu, 05 Jul 2018 16:05:06 +0800</pubDate>
       
@@ -57,30 +113,12 @@
     </item>
     
     <item>
-      <title>Arch_cannot_power_off</title>
-      <link>http://localhost:1313/post/linux/arch_cannot_power_off/</link>
-      <pubDate>Wed, 04 Jul 2018 11:26:30 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/linux/arch_cannot_power_off/</guid>
-      <description>关于arch无法关机的尝试 method 1 (not work) pacman -Syu method 2（not work） linkhttps://bbs.archlinux.org/viewtopic.php?id=234329 adding a shutdown to the hooks: vim /etc/mkinitcpio.conf HOOKS=(base udev autodetect modconf block filesystems resume keyboard fsck usr shutdown) mkinitcpio -p linux</description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
+      <title>Windows的操作总结</title>
       <link>http://localhost:1313/post/windows/windows/</link>
       <pubDate>Tue, 03 Jul 2018 14:36:08 +0800</pubDate>
       
       <guid>http://localhost:1313/post/windows/windows/</guid>
-      <description>Windows的操作总结 添加软件的自动启动 将某软件设置为开机自启动，只需要将该脚本生成一个“快捷方式”，然后将此快捷方式放置到程序自启动文件</description>
-    </item>
-    
-    <item>
-      <title>Batch</title>
-      <link>http://localhost:1313/post/windows/batch/</link>
-      <pubDate>Tue, 03 Jul 2018 14:02:11 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/windows/batch/</guid>
-      <description>Windows中Bacth命令总结 将Windows中cmd的输出结果重定向到文件里 ping archlinux.org &amp;gt; D:/log.txt #会覆盖之前的结果 ping archlinux.org &amp;gt;&amp;gt; D:/log.txt #在之前的基础上追加输出</description>
+      <description>添加软件的自动启动 将某软件设置为开机自启动，只需要将该脚本生成一个“快捷方式”，然后将此快捷方式放置到程序自启动文件夹之下即可,一般路径为：</description>
     </item>
     
     <item>
@@ -117,15 +155,6 @@
       
       <guid>http://localhost:1313/post/hugo/</guid>
       <description>一， 使用Hugo搭建个人博客 安装Hugo 这里是在Windows安装Hugo，其他安装可以参考官方文档。 下载hugod的发布版,地址为 https://github.com/gohugoio/hugo/releases , 下载</description>
-    </item>
-    
-    <item>
-      <title>Second</title>
-      <link>http://localhost:1313/post/second/</link>
-      <pubDate>Fri, 29 Jun 2018 13:37:25 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/second/</guid>
-      <description> my second test this is first title third forth five haha somthing anther one lylhw somthing anther one lylhw </description>
     </item>
     
     <item>

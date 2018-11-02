@@ -6,19 +6,10 @@
     <description>Recent content in C&#43;&#43; on lylhw13 | my blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Jul 2018 15:33:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jul 2018 12:12:11 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>QT</title>
-      <link>http://localhost:1313/post/c&#43;&#43;/qt/</link>
-      <pubDate>Tue, 17 Jul 2018 15:33:08 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/c&#43;&#43;/qt/</guid>
-      <description>QT summary QVector doesn&amp;rsquo;t have range-construction. 更全面的分析如下https://marcmutz.wordpress.com/effective-qt/containers/</description>
-    </item>
     
     <item>
       <title>C&#43;&#43;</title>
